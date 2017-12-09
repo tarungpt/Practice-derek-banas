@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         String[] favoriteTVShows = {"Pushing Daisies", "Better Off Ted", "Twin Peaks", "Freaks and Geeks", "Orphan Black", "Walking Dead", "Breaking Bad", "The 400", "Alphas", "Life on Mars"};
 
-        ListAdapter theAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, favoriteTVShows);
+        ListAdapter theAdapter = new ArrayAdapter<>(this, R.layout.row_layout, favoriteTVShows);
         ListView theListView = findViewById(R.id.theListView);
         theListView.setAdapter(theAdapter);
         theListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
